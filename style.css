@@ -1,0 +1,139 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #66ff66 0%, #ffcc66 100%);
+  font-family: HELVETICA;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+/*Header with Nav Bar*/
+header{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+  height: 70px;
+  width: 100%;
+  color: white;
+}
+
+/*Logo in the Nav bar*/
+.logo{
+  float: left;
+  padding: 0;
+  margin: 0;
+  margin-left: 5%;
+}
+
+.logo img{
+  margin-top: 2px;
+  height: 65px;
+}
+
+/*NavBar*/
+.navbar{
+  width: 95%;
+}
+
+nav ul{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+nav ul li{
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  padding: 20px;
+  float: right;
+}
+
+nav ul li:hover{
+  background: linear-gradient(to bottom right, #ff9900 0%, #ff99cc 100%);
+  cursor: pointer;
+}
+
+/*AppStore Information and where to Download*/
+.AppStore{
+  height: 800px;
+  //border-bottom: solid 15px;
+  overflow: hidden;
+  background-image: url("fitnessModified.png");
+  background-size: cover;
+}
+
+.AppStore .content{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 40px
+}
+
+.AppStore .content p{
+  float: right;
+  margin-top: 100px;
+  font-family: 'Anton', sans-serif;
+  font-size: 100px;
+  color: white;
+}
+
+.AppStore .content .phone img{
+  height: 750px;
+  padding: 0;
+  float: left;
+  margin: 0;
+}
+
+.AppStore .content .appLogo img{
+  float: right;
+  height: 10px;
+}
+
+.AppStore .content .appStoreLogo img{
+  float: right;
+  display: grid;
+  height: 100px;
+  width: 20px;
+}
+
+
+
+/*Info about "Our Mission"*/
+.Mission{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 10px;
+}
+
+.Mission .content{
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Mission .content p{
+  font-size: 20px;
+}
+
+.Mission .content h2{
+  text-align: left;
+  font-family: Anton;
+  color:darkolivegreen;
+}
+
+
+/*Reformat for Mobile Devices*/
+@media screen and (max-width: 580px){
+  header{
+    height: 100vh;
+  }
+}
