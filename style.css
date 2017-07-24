@@ -177,7 +177,6 @@ nav ul li:hover{
 .Features{
   margin: 0;
   padding: 0 25% 0 25%;
-  //  padding: 30%;
   background-color: #C4633C;
 }
 
@@ -200,7 +199,6 @@ nav ul li:hover{
   font-family: Anton;
   font-size: 30px;
   margin: 0;
-<<<<<<< HEAD
 }
 
 .Features p{
@@ -309,6 +307,8 @@ footer{
   height: 70px;
   padding-top: 5px;
   background-color: #C4633C;
+}
+
 }
 
 .Features p{
@@ -428,7 +428,7 @@ footer .logo{
 }
 
 #socialMedia{
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 footer .title{
