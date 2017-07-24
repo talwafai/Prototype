@@ -422,7 +422,6 @@ footer{
   background-color: #C4633C;
 }
 
->>>>>>> 1cf707f46b17caddee8432fb6877c0a1a4fc3b9e
 footer .logo{
   float: left;
   padding-right: 15px;
@@ -430,13 +429,9 @@ footer .logo{
   overflow: hidden;
   margin: 0;
 }
-<<<<<<< HEAD
-//
-=======
 
->>>>>>> 1cf707f46b17caddee8432fb6877c0a1a4fc3b9e
 #socialMedia{
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 footer .title{
