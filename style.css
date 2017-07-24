@@ -200,6 +200,7 @@ nav ul li:hover{
   font-family: Anton;
   font-size: 30px;
   margin: 0;
+<<<<<<< HEAD
 }
 
 .Features p{
@@ -310,6 +311,118 @@ footer{
   background-color: #C4633C;
 }
 
+=======
+}
+
+.Features p{
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.table{
+  display: table;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  list-style:none;
+}
+
+.container li {
+  margin:30px 50px 30px 50px;
+  margin: 20px;
+  width: 150px;
+  text-align: center;
+  float: left;
+}
+
+.container img {
+  display:block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background: white;
+  margin: 0;
+}
+
+/*FAQ*/
+.FAQ{
+  margin: 0;
+  padding: 0 25% 0 25%;
+  background-color: white;
+}
+
+.FAQ h2{
+  font-family: Anton;
+  font-size: 50px;
+  margin:0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: thick solid #C4633C;
+}
+
+.FAQ .content .intro{
+  margin: 20px 0;
+}
+
+.FAQ p{
+  font-size: 20px;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #C4633C;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0px 18px;
+    margin: 10px 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*Footer with contact and title (also contains links to social media and )*/
+
+footer{
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 70px;
+  padding-top: 5px;
+  background-color: #C4633C;
+}
+
+>>>>>>> 1cf707f46b17caddee8432fb6877c0a1a4fc3b9e
 footer .logo{
   float: left;
   padding-right: 15px;
@@ -317,7 +430,11 @@ footer .logo{
   overflow: hidden;
   margin: 0;
 }
+<<<<<<< HEAD
 //
+=======
+
+>>>>>>> 1cf707f46b17caddee8432fb6877c0a1a4fc3b9e
 #socialMedia{
   padding-left: 30px;
 }
