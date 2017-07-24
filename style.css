@@ -5,8 +5,13 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #66ff66 0%, #ffcc66 100%);
+  background: white;
   font-family: HELVETICA;
+  color: #444;
+}
+
+h2, h3{
+  color: black;
 }
 
 p{
@@ -19,7 +24,7 @@ header{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: black;
+  background: #C4633C;
   height: 70px;
   width: 100%;
   color: white;
@@ -47,6 +52,11 @@ nav ul{
   padding: 0;
   margin: 0;
   overflow: hidden;
+  -webkit-transition: max-height 0.4s;
+-ms-transition: max-height 0.4s;
+-moz-transition: max-height 0.4s;
+-o-transition: max-height 0.4s;
+-webkit-transition: max-height 0.4s;
 }
 
 nav ul li{
@@ -58,7 +68,7 @@ nav ul li{
 }
 
 nav ul li:hover{
-  background: linear-gradient(to bottom right, #ff9900 0%, #ff99cc 100%);
+  background: black;
   cursor: pointer;
 }
 
@@ -105,38 +115,411 @@ nav ul li:hover{
   color: white;
 }
 
-
-
-
-
 /*Info about "Our Mission"*/
 .Mission{
   margin: 0;
-  padding: 0;
+  padding: 25%;
   position: relative;
-  padding-top: 10px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  background-color: #C4633C;
 }
 
-.Mission .content{
+.Mission h2{
+  padding-bottom: 20px;
+  border-bottom: thick solid white;
+}
+
+.Mission p{
+  font-size: 20px;
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 20px 0;
 }
 
-.Mission .content p{
+.Mission h2{
+  padding-top: 20px;
+  font-size: 50px;
+  font-family: Anton;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/*Info about "Our Differences"*/
+.Difference{
+  margin: 0;
+  padding: 25%;
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.Difference h2{
+  padding-bottom: 20px;
+  border-bottom: thick solid #C4633C;
+}
+
+.Difference p{
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.Difference h2{
+  padding-top: 20px;
+  font-size: 50px;
+  font-family: Anton;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/*APP FEATURES (ie Nutrition,  Excerise, Wellness)*/
+.Features{
+  margin: 0;
+  padding: 0 25% 0 25%;
+  //  padding: 30%;
+  background-color: #C4633C;
+}
+
+.Features h2{
+  font-family: Anton;
+  font-size: 50px;
+  margin:0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: thick solid white;
+}
+
+.Features .intro{
+  padding: 20px 0;
   font-size: 20px;
 }
 
-.Mission .content h2{
-  text-align: left;
+.Features h3{
   font-family: Anton;
-  color:darkolivegreen;
+  font-size: 30px;
+  margin: 0;
 }
 
+.Features p{
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.table{
+  display: table;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  list-style:none;
+}
+
+.container li {
+  margin:30px 50px 30px 50px;
+  margin: 20px;
+  width: 150px;
+  text-align: center;
+  float: left;
+}
+
+.container img {
+  display:block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background: white;
+  margin: 0;
+}
+
+/*FAQ*/
+.FAQ{
+  margin: 0;
+  padding: 0 25% 0 25%;
+  background-color: white;
+}
+
+.FAQ h2{
+  font-family: Anton;
+  font-size: 50px;
+  margin:0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: thick solid #C4633C;
+}
+
+.FAQ .content .intro{
+  margin: 20px 0;
+}
+
+.FAQ p{
+  font-size: 20px;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #C4633C;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0px 18px;
+    margin: 10px 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*Footer with contact and title (also contains links to social media and )*/
+
+footer{
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 70px;
+  padding-top: 5px;
+  background-color: #C4633C;
+}
+
+footer .logo{
+  float: left;
+  padding-right: 15px;
+  padding-top: 5px;
+  overflow: hidden;
+  margin: 0;
+}
+
+#socialMedia{
+  padding-left: 30px;
+}
+
+footer .title{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+footer .contact{
+  position:absolute;
+  right: 0;
+  padding: 13px 30px 0 0;
+  font-family: 'Anton', sans-serif;
+  font-size: 25px;
+}
+
+footer .logo img{
+  width: 50px;
+  height: 50px;
+}
+
+/*Nav bar on Mobile*/
+.handle{
+  width: 100%;
+  background: black;
+  //text-align: le;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+.handle p{
+  float: right;
+  font-size: 28px;
+  font-family: 'Anton', sans-serif;
+  padding: 0;
+  margin-bottom: : 10px;
+}
+
+.hanlde img{
+  height: 30 em;
+}
+
+/*adjusts the links to account for the nav bar*/
+:target:before {
+  content:"";
+  display:block;
+  height:60px; /* fixed header height*/
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+/*Link color*/
+a{
+  text-decoration: none;
+  color: inherit;
+}
 
 /*Reformat for Mobile Devices*/
-@media screen and (max-width: 580px){
-  header{
-    height: 100vh;
+@media screen and (max-width: 900px){
+  .Mission{
+    padding: 5%;
   }
+  .Difference{
+    padding: 5%;
+  }
+  .Features{
+    padding: 0 5% 0 5%;
+  }
+  .FAQ{
+    padding: 0 5% 0 5%;
+  }
+
+  .table{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+  }
+
+  .container li {
+    margin:30px 50px 30px 50px;
+    margin: 20px;
+    width: 90%;
+    text-align: center;
+    float: none;
+  }
+
+  .container img {
+    display:block;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    background: white;
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+/*************************************/
+  header .logo{
+    display: none;
+  }
+
+  nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #C4633C;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .Mission{
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  nav ul{
+    max-height: 20em;
+  }
+  .show{
+    max-height: 0em;
+  }
+  nav ul li{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+  }
+  .handle{
+    display: block;
+  }
+
+/*AppStore CONTENT adjusted and modified for moblie viewing*/
+
+  .AppStore{
+    height: 90vh;
+  }
+
+  .AppStore .phone{
+    display: none;
+  }
+
+  .AppStore .content{
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    padding-top: 17vh;
+  }
+
+  .AppStore .rightHalf{
+    text-align: center;
+    height: inherit;
+  }
+
+  .AppStore .content .rightHalf{
+    padding: 0;
+  }
+
+  .AppStore .content .rightHalf .pics img{
+    height: 10vh;
+  }
+
+  .AppStore .rightHalf p{
+    text-align: center;
+    font-size: 8vh;
+  }
+
+  /*FOOTER adjusted verticallu for Mobile*/
+  footer{
+    height: auto;
+  }
+
+  footer .title{
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .contact{
+    position: relative;
+  }
+
+  footer .contact{
+    text-align: center;
+    padding: 0;
+    padding: 10px 0 0 0;
+  }
+
+footer .logo img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  footer #socialMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

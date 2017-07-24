@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Made with Thimble</title>
@@ -16,14 +17,27 @@
           <img src="whiteLogoAsset%201.png">
         </div>
         <nav>
-          <ul>
-            <li>Team</li>
-            <li>Contact</li>
-            <li>Features</li>
-            <li>F.A.Q.</li>
+          <ul class="show">
+            <li><a href="#Team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#FAQ">F.A.Q.</a></li>
           </ul>
+          <div class="handle">
+            <img src="whiteLogoAsset%201.png" height="40px">
+            <p>Menu</p>
+          </div>
         </nav>
       </div>
+      <script>
+        $('.handle').on('click', function(){
+           $('nav ul').toggleClass('show')
+        });
+        $('a').on('click', function(){
+          $('nav ul').toggleClass('show')
+        });
+      </script>
+
     </header>
 
     <div class="AppStore">
@@ -36,7 +50,7 @@
         <div class="rightHalf">
 
           <p>
-            <strong>Join In On the <br>Fitness Today</strong>
+            <strong>Join In On the <br> With Foxery <br>Fitness Today</strong>
           </p>
 
           <div class="pics">
@@ -54,19 +68,114 @@
     </div>
 
     <div class="Mission">
-      <div class="content">
-        <h2>Our Mission...</h2>
-        <p>
-          The world is filled with many people that care about health and wellness.
-          By focusing on exercise, nutrition, and wellness, we hope that Foxery encourages users to share what they do to be healthy, while also learning what other people are doing to optimize their health and performance metrics. We believe that gathering insights from friends, coaches, influencers, athletes and other health enthusiasts, will promote a
-          continuous search for each individuals best approach to living a healthy life.
-          <br>
-          <br>
-          Sharing expertise and insights from ones own health practices generates a comfortable setting to share everything one does to be healthy. In the process, users should realize that they are helping to create the ultimate knowledge economy involving exercise, nutrition and
-          wellness.
-        </p>
+      <h2>Our Mission...</h2>
+      <p>
+        The world is filled with many people that care about health and wellness.
+        By focusing on exercise, nutrition, and wellness, we hope that Foxery encourages users to share what they do to be healthy, while also learning what other people are doing to optimize their health and performance metrics. We believe that gathering insights from friends, coaches, influencers, athletes and other health enthusiasts, will promote a
+        continuous search for each individuals best approach to living a healthy life.
+        Sharing expertise and insights from ones own health practices generates a comfortable setting to share everything one does to be healthy. In the process, users should realize that they are helping to create the ultimate knowledge economy involving exercise, nutrition and
+        wellness.
+      </p>
+    </div>
+    <div class="Difference">
+      <h2>What Makes Us Different</h2>
+        <p> Foxery was founded out of a personal desire and an apparent vacancy in the market. Many social platforms and media outlets had previously done a great job at allowing people to share family photos, memes, political comments, and disappearing videos, but all of those programs were focused on quantity, not quality of information. Even though you might find someone sharing a picture doing yoga or a juice they just consumed, we wanted to comprehensively understand what makes someone perform and achieve their healthy lifestyles. As opposed to a magazine generally telling me about a particular exercise, diet or mode of recovery, we wanted to see what our peers were doing. We wanted to see what people do to be healthy, by highlighting the entire perspective on their weekly exercise habits, nutrition practices, and wellness protocols. With preexisting platforms, many users feel uncomfortable sharing too much about their health practices; Foxery is fixing that by creating a platform where everything will revolve around exercise, nutrition, and wellness.
+      </p>
+    </div>
+
+    <div class="Features" id="Features">
+      <h2>Features</h2>
+      <p class="intro"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <div class="table">
+        <ul class="container">
+          <li><img src="nutrition.png" width="200" height="200" alt="" /><h3>Nutrition</h3> <p>Everything you eat that contributes to your health or complements your active lifestyle</p> </li>
+          <li><img src="Excercise.png" width="200" height="200" alt="" /><h3>Exercise</h3> <p> The activities that keep your body in tip top shape and get your heart rate pumping strong</p> </li>
+          <li><img src="wellness.png" width="200" height="200" alt="" /><h3>Wellness</h3> <p>Stretching, ice bathes, and anything else that helps you recover physically and mentally from workouts</p> </li>
+        </ul>
       </div>
     </div>
+
+    <div class="FAQ" id="FAQ">
+      <h2>Frequently Asked Questions</h2>
+      <div class="content">
+
+        <p class="intro">Have any questions for us? check out some of the common ones below! </p>
+
+        <button class="accordion">Is Foxery only for instructors, coaches, and elite athletes?</button>
+        <div class="panel">
+          <p>No, Foxery encourages users at all stages of health and fitness to use this app to interact with other health enthusiast and investigate new approaches to optimal living</p>
+        </div>
+
+        <button class="accordion">Can I access my Foxery account online?</button>
+        <div class="panel">
+          <p>Right now Foxery is only operating in the App Store on iOS enabled devices, but we are working on building a web platform</p>
+        </div>
+
+        <button class="accordion">How much does Foxery cost to download?</button>
+        <div class="panel">
+          <p>Foxery is free to download and operate</p>
+        </div>
+
+        <button class="accordion">How can I add a video to my Foxery profile?</button>
+        <div class="panel">
+          <p>Right now, you cannot add a video directly within the Foxery app; however, we encourage you to create a Vimeo or YouTube account and share the link to your video</p>
+        </div>
+
+        <button class="accordion">How do I get a job at Foxery?</button>
+        <div class="panel">
+          <p>We are always looking for talented people to help grow our team. Please send your resume and cover letter to: jobs@foxeryinc.com</p>
+        </div>
+
+        <button class="accordion">I found a bug or glitch in the software, how do I get help with this?</button>
+        <div class="panel">
+          <p>Foxery aims to provide the best experience and interface for all of our users. Please let us know where you see a bug or glitch by sending any complaints or questions to: help@foxeryinc.com</p>
+        </div>
+
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              }
+            }
+          }
+        </script>
+      </div>
+    </div>
+
+    <footer id="contact">
+
+      <div class="title">
+        <img src="whiteLogoAsset%201.png" height="65px;">
+      </div>
+
+      <div id="socialMedia">
+        <div class="logo">
+          <img src="fb.png">
+        </div>
+
+        <div class="logo">
+          <img src="twitter.png">
+        </div>
+
+        <div class="logo">
+          <img src="app.png">
+        </div>
+      </div>
+
+
+
+      <div class="contact">
+        <p>Contact Us at help@foxeryinc.com</p>
+      </div>
+
+    </footer>
 
   </body>
 </html>
