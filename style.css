@@ -75,45 +75,93 @@ nav ul li:hover{
 /*AppStore Information and where to Download*/
 .AppStore{
   height: 800px;
-  //border-bottom: solid 15px;
   overflow: hidden;
-  background-image: url("fitnessBW.jpg");
-  background-size: cover;
-}
+  //background-image: url("fitnessBW.jpg");
 
-.AppStore .content{
-  margin-left: 23%;
-  margin-top: 25px;
-}
-
-.AppStore .content .phone img{
-  height: 750px;
-  padding: 0;
-  float: left;
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.AppStore .content .rightHalf{
-  padding-top: 150px;
-  padding-bottom: 250px;
+.bg{
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  z-index: -1;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b2/Mountain_running.JPG');
+  background-size: cover;
+  background-size: 200% 200%;
+  background-attachment: fixed;
+  background-position: -700px -400px;
+  filter: blur(4px) grayscale(10%);
 }
 
-.AppStore .content .rightHalf .pics{
+.AppStore .left{
+  float: left;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1;
+}
+
+.AppStore .left img{
+  padding-top: 25px;
+  float: right;
+  height: 750px;
+  vertical-align: bottom;
+}
+
+.AppStore .right{
+  width: 50%;
+  float: right;
+  height: inherit;
+  font-family: 'Anton', sans-serif;
+  font-size: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.AppStore .right p{
+  float: left;
+}
+
+.AppStore .right .pics{
   align-content: center;
   display:inline-flex;
 }
 
-.AppStore .content .rightHalf .pics img{
-  padding: 20px;
+.AppStore .right .pics img{
+  padding-right: 20px;
   height: 110px;
 }
 
-.AppStore .content p{
-  text-align:left;
-  font-family: 'Anton', sans-serif;
-  font-size: 100px;
-  color: white;
+/*linked video section*/
+.video{
+  margin: 0;
+  padding: 0 25% 20px 25%;
+  height: 80%;
 }
+
+.video h2{
+  padding-top: 20px;
+  font-size: 50px;
+  font-family: Anton;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: thick solid #ffcc00;
+}
+
+iframe{
+  padding: 20px 0 20px 0;
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
 
 /*Info about "Our Mission"*/
 .Mission{
@@ -123,11 +171,6 @@ nav ul li:hover{
   padding-top: 0px;
   padding-bottom: 10px;
   background: linear-gradient(to right, #cd5e00 0%, #ffcc00 99%);
-}
-
-.Mission h2{
-  padding-bottom: 20px;
-  border-bottom: thick solid white;
 }
 
 .Mission p{
@@ -142,6 +185,8 @@ nav ul li:hover{
   font-family: Anton;
   margin: 0;
   margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: thick solid white;
 }
 
 /*Info about "Our Differences"*/
@@ -152,6 +197,7 @@ nav ul li:hover{
   padding-top: 0px;
   padding-bottom: 10px;
   background-color: white;
+  //background-image: url('runner.jpg');
 }
 
 .Difference h2{
@@ -380,8 +426,20 @@ a{
 /*Reformat for Mobile Devices*/
 @media screen and (max-width: 900px){
   :target:before {
-    height: 1vh;
-    margin: -1vh 0 0;
+    height: 70px;
+    margin: -10px 0 0;
+  }
+
+  /*video*/
+  .video{
+    padding: 0 5% 0 5%;
+  }
+
+  iframe{
+    padding: 20px 0 20px 0;
+    display: block;
+    margin: 0 auto;
+    max-width: 95%;
   }
 
   .Mission{
@@ -460,36 +518,33 @@ a{
 /*AppStore CONTENT adjusted and modified for moblie viewing*/
 
   .AppStore{
-    height: 90vh;
+    height: 91vh;
   }
 
-  .AppStore .phone{
+  .AppStore .left{
     display: none;
   }
 
-  .AppStore .content{
-    margin: 0;
-    margin-top: 0;
-    padding: 0;
-    padding-top: 17vh;
-  }
-
-  .AppStore .rightHalf{
+  .AppStore .right{
+    width: 100%;
     text-align: center;
+    font-size: 8vh;
     height: inherit;
   }
 
-  .AppStore .content .rightHalf{
-    padding: 0;
+  .bg{
+    background-position: -400px 0;
+    background-size: cover;
+    filter: blur(3px);
   }
 
-  .AppStore .content .rightHalf .pics img{
+  .AppStore .right .pics{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .AppStore .right .pics img{
     height: 10vh;
-  }
-
-  .AppStore .rightHalf p{
-    text-align: center;
-    font-size: 8vh;
   }
 
   /*FOOTER adjusted verticallu for Mobile*/
