@@ -89,10 +89,10 @@ nav ul li:hover{
   width: inherit;
   z-index: -1;
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b2/Mountain_running.JPG');
-
+  background-image: url('https://c1.staticflickr.com/7/6168/6134400383_2ce4b40856_b.jpg');
   background-size: cover;
-  background-size: 170% 170%;
-  background-position: -700px -200px;
+  //background-size: 170% 170%;
+  //background-position: -700px -200px;
   filter: blur(0px) grayscale(100%);
 
 }
