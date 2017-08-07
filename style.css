@@ -8,10 +8,12 @@ body {
   background: white;
   font-family: HELVETICA;
   color: #444;
+  font-family: roboto slab;
 }
 
 h2, h3{
   color: black;
+  font-family: Raleway;
 }
 
 p{
@@ -60,10 +62,10 @@ nav ul{
 }
 
 nav ul li{
-  font-family: 'Anton', sans-serif;
+//  font-family: 'Anton', sans-serif;
   font-size: 20px;
   display: inline-block;
-  padding: 20px;
+  padding: 22px;
   float: right;
 }
 
@@ -76,8 +78,6 @@ nav ul li:hover{
 .AppStore{
   height: 800px;
   overflow: hidden;
-  //background-image: url("fitnessBW.jpg");
-
   margin: 0;
   padding: 0;
   width: 100%;
@@ -92,14 +92,13 @@ nav ul li:hover{
 
   background-size: cover;
   background-size: 170% 170%;
-  //background-size: cover;
-  //background-attachment: fixed;
   background-position: -700px -200px;
-  filter: blur(2px) grayscale(100%);
+  filter: blur(0px) grayscale(100%);
 
 }
 
 .AppStore .left{
+  display: none;
   float: left;
   height: 100%;
   width: 50%;
@@ -116,13 +115,14 @@ nav ul li:hover{
 }
 
 .AppStore .right{
+  display: none;
   width: 50%;
   float: right;
   height: inherit;
-  font-family: 'Anton', sans-serif;
+//  font-family: 'Anton', sans-serif;
   font-size: 100px;
   color: white;
-  display: flex;
+//  display: flex;
   justify-content: center;
   flex-direction: column;
 }
@@ -151,7 +151,7 @@ nav ul li:hover{
 .video h2{
   padding-top: 20px;
   font-size: 50px;
-  font-family: Anton;
+//  font-family: Anton;
   margin: 0;
   margin-bottom: 10px;
   padding-bottom: 20px;
@@ -239,7 +239,7 @@ iframe{
 .Mission h2{
   padding-top: 20px;
   font-size: 50px;
-  font-family: Anton;
+//  font-family: Anton;
   margin: 0;
   margin-bottom: 10px;
   padding-bottom: 20px;
@@ -271,7 +271,7 @@ iframe{
 .Difference h2{
   padding-top: 20px;
   font-size: 50px;
-  font-family: Anton;
+//  font-family: Anton;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -284,7 +284,7 @@ iframe{
 }
 
 .Features h2{
-  font-family: Anton;
+//  font-family: Anton;
   font-size: 50px;
   margin:0;
   padding: 0;
@@ -299,7 +299,7 @@ iframe{
 }
 
 .Features h3{
-  font-family: Anton;
+//  font-family: Anton;
   font-size: 30px;
   margin: 0;
 }
@@ -348,7 +348,7 @@ iframe{
 }
 
 .FAQ h2{
-  font-family: Anton;
+//  font-family: Anton;
   font-size: 50px;
   margin:0;
   padding-top: 10px;
@@ -435,7 +435,7 @@ footer .contact{
   position:absolute;
   right: 0;
   padding: 13px 30px 0 0;
-  font-family: 'Anton', sans-serif;
+//  font-family: 'Anton', sans-serif;
   font-size: 25px;
 }
 
@@ -459,7 +459,7 @@ footer .logo img{
 .handle p{
   float: right;
   font-size: 28px;
-  font-family: 'Anton', sans-serif;
+//  font-family: 'Anton', sans-serif;
   padding: 0;
   margin-bottom: : 10px;
 }
@@ -608,7 +608,7 @@ a{
   .bg{
     background-position: 50% 0;
     background-size: cover;
-    filter: blur(3px);
+    filter: blur(3px) grayscale(100%);
   }
 
   .AppStore .right .pics{
