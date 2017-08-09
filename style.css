@@ -278,7 +278,7 @@ iframe{
 
 /*APP FEATURES (ie Nutrition,  Excerise, Wellness)*/
 .Features{
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0 25% 0 25%;
   background: white;
 }
