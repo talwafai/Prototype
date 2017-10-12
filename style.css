@@ -115,11 +115,9 @@ nav ul li:hover{
 }
 
 .AppStore .right{
-//  display: none;
   width: 50%;
   float: right;
   height: inherit;
-//  font-family: 'Anton', sans-serif;
   font-size: 100px;
   color: white;
   display: flex;
